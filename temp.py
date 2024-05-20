@@ -1,7 +1,10 @@
 from os import listdir, makedirs, rename
 from os.path import isdir
+from pathlib import Path
 
-for file in listdir(r'C:\Users\diogo\Downloads')[:-1]:
+downloads_path = str(Path.home() / "Downloads")
+
+for file in listdir(downloads_path)[:-1]:
     aux1 = file.split(' - ')
     aux2 = aux1[1]
     aux3 = aux1[-1]
