@@ -10,7 +10,7 @@ Este projeto foi inspirado pelo [Portal do IBGE](https://censo2022.ibge.gov.br/p
 
 ### Pré-requisitos
 
-- Python 3.9
+- Python 3.x
 
 ### Instalação das Bibliotecas
 
@@ -24,15 +24,26 @@ O arquivo `requirements.txt` contém as versões específicas das bibliotecas ut
 
 ### Executando o Projeto
 
-1. Clone este repositório para sua máquina local.
-2. Navegue até a pasta do projeto no terminal.
-3. Execute o seguinte comando para iniciar o servidor Streamlit:
+Siga a ordem abaixo para executar os arquivos:
 
-```bash
-streamlit run app.py
-```
+1. Execute o script `webscraping.py` para fazer o download dos dados:
+   ```bash
+   python webscraping.py
+   ```
+2. Execute o script `temp.py` para mover os arquivos baixados para a pasta do projeto:
+   ```bash
+   python temp.py
+   ```
+3. Execute o script `app.py` para iniciar o servidor Streamlit e visualizar o dashboard:
+   ```bash
+   streamlit run app.py
+   ```
 
 O aplicativo estará disponível em seu navegador padrão.
+
+## Contribuições
+
+Contribuições são bem-vindas! Sinta-se à vontade para abrir uma issue ou enviar um pull request.
 
 ## Licença
 
